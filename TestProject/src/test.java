@@ -7,4 +7,8 @@ public class test {
         System.out.println("Car started");
         Assert.fail();
     }
+    @Test(dependsOnMethods = {"startCar"})
+    void driveCar(){
+        System.out.println("Car drove");
+    }
 }
