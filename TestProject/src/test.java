@@ -16,4 +16,9 @@ public class test {
     void stopCar(){
         System.out.println("Car stopped");
     }
+
+    @Test(dependsOnMethods = {"driveCar","stopCar"}, alwaysRun = true)
+    void parkCar(){
+        System.out.println("Car parked");
+    }
 }
