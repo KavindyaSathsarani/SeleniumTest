@@ -10,4 +10,12 @@ public class TC1 {
     void afterClass(){
         System.out.println("This will execute after the class");
     }
+    @BeforeMethod
+    void beforeMethod(){
+        System.out.println("This will execute before every method");
+    }
+    @AfterMethod
+    void afterMethod(){
+        System.out.println("This will execute after every method ");
+    }
 }
