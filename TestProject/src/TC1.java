@@ -18,4 +18,8 @@ public class TC1 {
     void afterMethod(){
         System.out.println("This will execute after every method ");
     }
+    @Test
+    void test1(){
+        System.out.println("This is test one");
+    }
 }
