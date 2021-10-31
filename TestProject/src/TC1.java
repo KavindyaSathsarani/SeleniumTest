@@ -22,4 +22,8 @@ public class TC1 {
     void test1(){
         System.out.println("This is test one");
     }
+    @Test
+    void  test2(){
+        System.out.println("This is test two");
+    }
 }
