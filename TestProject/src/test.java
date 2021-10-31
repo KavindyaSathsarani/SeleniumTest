@@ -11,4 +11,9 @@ public class test {
     void driveCar(){
         System.out.println("Car drove");
     }
+
+    @Test(dependsOnMethods = "driveCar")
+    void stopCar(){
+        System.out.println("Car stopped");
+    }
 }
